@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="31" viewBox="0 0 50 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #363636;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Hamburger.svg" class="cls-1" d="M33,22H78a2.5,2.5,0,0,1,0,5H33A2.5,2.5,0,0,1,33,22Zm0,13H78a2.5,2.5,0,0,1,0,5H33A2.5,2.5,0,0,1,33,35Zm0,13H78a2.5,2.5,0,0,1,0,5H33A2.5,2.5,0,0,1,33,48Z" transform="translate(-30.5 -22)"/>
+</svg>

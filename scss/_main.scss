@@ -1,0 +1,256 @@
+// This is my styleing_______________________________________________>
+
+// This is my Background Image__________________________________________________________>
+html { 
+  background: url(/img/Home_BG.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+//Hand Styling__________________________________________________________>
+.hand {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    //transform: translateX(0%);
+	//transition: all 400ms $transition-type;
+	
+}
+
+   .active {
+        position: absolute;
+		//transform: translateX(100%);
+		bottom: 0px;
+        left: -418px;
+        opacity: 1;
+		z-index: 0;
+}
+
+
+
+
+
+//Hamburger Styling__________________________________________________________>
+
+
+// Code Pen Hamburger Borrow------------------------------------->
+
+$bar-width: 50px;
+$bar-height: 5px;
+$bar-spacing: 15px;
+
+.hamburger-menu {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 0;
+  bottom: 0;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing*2;
+  cursor: pointer;
+}
+
+.bar,
+.bar:after,
+.bar:before {
+  width: $bar-width;
+	height: $bar-height;
+}
+
+.bar {
+	position: relative;
+	transform: translateY($bar-spacing);
+	//background: ; // This is the middle bar bg color..
+	background-color: rgba(51, 51, 51, 1);
+    transition: all 0ms 300ms;
+    border-radius: 5px;
+
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: rgba(51, 51, 51, 1);//bg color bar top...
+    border-radius: 5px;
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: rgba(51, 51, 51, 1); // bg color bar bottom...
+    border-radius: 5px;
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.bar.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+//Navigation Menu Styling__________________________________________________________> 
+
+nav {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    visibility: hidden;
+    
+}
+
+#B {
+    
+    
+}
+
+
+a {
+    margin: 50px;
+    //visibility: hidd;
+    
+}
+
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+}
+
+a:hover {
+    
+    animation: pulse 0.5s;
+    
+}
+
+.activenav {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    visibility: visible;
+}
+//Layout__________________________________________________________> 
+
+.page {
+    display: flex;
+}
+
+header,
+section,
+main,
+article,
+aside,
+footer {
+  flex: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+//Keyframes__________________________________________________________>
+
+@keyframes ham {
+    from {
+        transform: scale(1, 1);
+        }
+    to {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+.ham {
+    animation-name: ham;
+    
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  animation-name: slideOutLeft;
+  
+}
+
+// lettering styles
+
+//------------------------------------------------------------->
+
+// This is Collins
+
+// Main Stylesheet
+
+// Color Palette
+
+// Typography
+
+// Video Player Styling
+video {
+    max-width: 100%;
+    width: 100%;
+}
+
+
