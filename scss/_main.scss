@@ -38,6 +38,9 @@ html {
 //Hamburger Styling__________________________________________________________>
 
 
+
+}
+
 // Code Pen Hamburger Borrow------------------------------------->
 
 $bar-width: 50px;
@@ -124,6 +127,7 @@ nav {
     animation: zoomOut 1s;
     animation-fill-mode: forwards;
     
+    
 }
 
 #B {
@@ -146,6 +150,7 @@ a:link    {
 a:hover {
     
     animation: pulse 0.5s;
+    
     
 }
 

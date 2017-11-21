@@ -1154,7 +1154,11 @@ html {
   opacity: 1;
   z-index: 0; }
 
-/* line 47, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 40, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+.hamburger-menu:hover {
+  transform: scale3d(1.05, 1.05); }
+
+/* line 52, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .hamburger-menu {
   position: absolute;
   top: 50px;
@@ -1165,25 +1169,25 @@ html {
   height: 35px;
   cursor: pointer; }
 
-/* line 58, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 63, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .bar,
 .bar:after,
 .bar:before {
   width: 50px;
   height: 5px; }
 
-/* line 65, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 70, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .bar {
   position: relative;
   transform: translateY(15px);
   background-color: #333333;
   transition: all 0ms 300ms;
   border-radius: 5px; }
-  /* line 74, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+  /* line 79, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
   .bar.animate {
     background: rgba(255, 255, 255, 0); }
 
-/* line 79, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 84, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .bar:before {
   content: "";
   position: absolute;
@@ -1193,7 +1197,7 @@ html {
   border-radius: 5px;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-/* line 89, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 94, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .bar:after {
   content: "";
   position: absolute;
@@ -1203,19 +1207,19 @@ html {
   border-radius: 5px;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-/* line 99, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 104, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .bar.animate:after {
   top: 0;
   transform: rotate(45deg);
   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-/* line 105, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 110, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .bar.animate:before {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
-/* line 113, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 118, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 nav {
   position: absolute;
   left: 10px;
@@ -1229,20 +1233,20 @@ nav {
   animation: zoomOut 1s;
   animation-fill-mode: forwards; }
 
-/* line 135, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 140, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 a {
   margin: 50px; }
 
-/* line 141, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 146, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 a:link {
   /* Applies to all unvisited links */
   text-decoration: none; }
 
-/* line 146, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 151, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 a:hover {
   animation: pulse 0.5s; }
 
-/* line 152, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 158, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .activenav {
   position: absolute;
   left: 10px;
@@ -1256,11 +1260,11 @@ a:hover {
   visibility: visible;
   animation: zoomIn 1s; }
 
-/* line 167, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 173, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .page {
   display: flex; }
 
-/* line 171, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 177, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 header,
 section,
 main,
@@ -1281,7 +1285,7 @@ footer {
   to {
     transform: scale(1.05, 1.05); } }
 
-/* line 205, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 211, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .ham {
   animation-name: ham; }
 
@@ -1293,7 +1297,7 @@ footer {
   to {
     transform: scale3d(1, 1, 1); } }
 
-/* line 224, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 230, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .pulse {
   animation-name: pulse; }
 
@@ -1304,7 +1308,7 @@ footer {
     visibility: hidden;
     transform: translate3d(-100%, 0, 0); } }
 
-/* line 239, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 245, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .slideOutLeft {
   animation-name: slideOutLeft; }
 
@@ -1315,7 +1319,7 @@ footer {
   to {
     transform: translate3d(0, 0, 0); } }
 
-/* line 255, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 261, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .slideInLeft {
   animation-name: slideInLeft; }
 
@@ -1328,7 +1332,7 @@ footer {
   to {
     opacity: 0; } }
 
-/* line 274, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 280, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .zoomOut {
   animation-name: zoomOut; }
 
@@ -1339,11 +1343,11 @@ footer {
   50% {
     opacity: 1; } }
 
-/* line 289, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 295, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 .zoomIn {
   animation-name: zoomIn; }
 
-/* line 306, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
+/* line 312, /Users/Joshuabest/Desktop/Joshua Best Design Pro/scss/_main.scss */
 video {
   max-width: 100%;
   width: 100%; }
