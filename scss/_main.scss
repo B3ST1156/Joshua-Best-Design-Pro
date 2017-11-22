@@ -20,7 +20,7 @@ html {
 	
 }
 
-   .active {
+.active {
         position: absolute;
 		//transform: translateX(100%);
 		//bottom: 0px;
@@ -31,15 +31,9 @@ html {
 		z-index: 0;
 }
 
-
-
-
+//Remove a dot before either of these to unbreak the annimations.................
 
 //Hamburger Styling__________________________________________________________>
-
-
-
-}
 
 // Code Pen Hamburger Borrow------------------------------------->
 
@@ -49,13 +43,14 @@ $bar-spacing: 15px;
 
 .hamburger-menu {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 100px;
+  left: 100px;
   right: 0;
   bottom: 0;
   width: $bar-width;
   height: $bar-height + $bar-spacing*2;
   cursor: pointer;
+  
 }
 
 .bar,
@@ -115,34 +110,42 @@ $bar-spacing: 15px;
 
 nav {
     position: absolute;
-    left: 10px;
-    top: 100px;
+    left: 50px;
+    top: 135px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     font-weight: 300;
-    //visibility: hidden;
     animation: zoomOut 1s;
     animation-fill-mode: forwards;
-    
-    
 }
-
-#B {
     
-    
+.activenav {
+    position: absolute;
+    left: 50px;
+    top: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    animation: zoomIn 1s;
 }
+    
+    
 
+// Anchor linl styling----------------------------------------------------------->
 
 a {
     margin: 50px;
-    //visibility: hidd;
+    color: rgba(51, 51, 51, 1);
     
-}
+  }
 
-a:link    {
+a:link {
   /* Applies to all unvisited links */
   text-decoration:  none;
 }
@@ -150,23 +153,20 @@ a:link    {
 a:hover {
     
     animation: pulse 0.5s;
-    
-    
+      //animation-name: dropshad;
+      //animation-duration: 1400ms;
+      //animation-iteration-count: infinite;
+  
 }
 
-.activenav {
-    position: absolute;
-    left: 10px;
-    top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-    font-weight: 300;
-    visibility: visible;
-    animation: zoomIn 1s;
+a:visited {
+    color: rgba(150, 150, 150, 1);
 }
+
+a:active {
+    color: whitesmoke;
+}
+
 //Layout__________________________________________________________> 
 
 .page {
@@ -187,14 +187,6 @@ footer {
   padding: 1rem;
   text-align: center;
 }
-
-
-
-
-
-
-
-
 
 //Keyframes__________________________________________________________>
 
@@ -293,6 +285,25 @@ footer {
 
 .zoomIn {
   animation-name: zoomIn;
+}
+
+@keyframes dropshad {
+  0% {
+    filter: drop-shadow(15px 15px 0px blue);
+  }
+  
+  50% {
+    filter: drop-shadow(5px 5px 0px #222);
+    
+  }
+  
+  100% {
+    filter: drop-shadow(15px 15px 0px blue);
+  }
+}
+
+.dropshad {
+  animation-name: dropshad;
 }
 
 // lettering styles
